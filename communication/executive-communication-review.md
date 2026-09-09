@@ -1,467 +1,366 @@
 # Executive Communication Review
 
-**Version:** 1.0  
-**Status:** Active  
-**Audience:** Engineering leaders, architects, delivery leaders, AI assistants
+**Version:** 1.1  
+**Status:** Active
+
+## Objective
+
+Produce communication that is concise, easy to understand, technically accurate, defensible, actionable, and consistent with the author's natural voice.
+
+Optimize for clarity and decision-making, not writing sophistication.
+
+## Non-Negotiable Quality Gates
+
+Before finalizing any communication, verify:
+
+1. **Lead with the outcome** — State the decision, conclusion, request, recommendation, or issue first.
+2. **Concise** — Use no more words than necessary without removing material context.
+3. **Easy to understand** — The intended audience should understand the message on the first read.
+4. **Sound like me** — Preserve the author's direct, pragmatic, factual voice. Do not replace it with generic executive or AI-generated language.
+5. **No AI slop** — Remove filler, unnecessary framing, generic transitions, inflated language, repetition, and unnatural phrasing.
+6. **Technically accurate** — Validate terminology, technical claims, causality, and engineering reasoning.
+7. **Defensible** — Do not make a claim stronger than the available evidence supports.
+8. **Actionable** — Where action is required, make the action, owner, and timing clear.
+
+If improving style conflicts with accuracy, clarity, or the author's voice, prioritize accuracy, clarity, and voice.
 
 ---
 
-# Objective
-
-Produce communications that enable sound decisions and effective execution.
-
-Every communication should be:
-
-- Accurate
-- Concise
-- Defensible
-- Actionable
-- Technically sound
-- Appropriate for executive audiences
-
-Writing quality exists to improve decision-making, not to impress the reader.
-
----
-
-# Design Philosophy
-
-Good communication reduces ambiguity.
-
-It enables the reader to:
-
-- understand the situation quickly
-- make the intended decision confidently
-- know exactly what action is required
-- understand ownership
-- understand operational consequences
-
-Writing should optimize for execution.
-
----
-
-# Guiding Principles
+# Core Principles
 
 ## 1. Lead with the outcome
 
-State the decision, recommendation, request, issue, or conclusion in the opening sentence whenever practical.
+State the most important point first.
 
-The reader should understand why they are reading the message within the first one or two sentences.
+Prefer:
 
-Good examples:
-
-> The CR has been rescheduled to 9am on 2 Aug.
-
-> I recommend rolling back before the 4 Aug business-critical deployments.
+> I recommend rescheduling the ESSO migration to avoid introducing change risk immediately before the launch.
 
 Avoid:
 
-- As discussed…
-- Following up…
-- Long historical context
-- Background before purpose
+> Given the upcoming launch and after reviewing the current migration schedule, I wanted to share a recommendation regarding ESSO.
 
-Background supports the outcome. It should not replace it.
+Background should support the outcome, not precede it unnecessarily.
 
----
+## 2. Be concise
 
-## 2. Facts before conclusions
-
-Separate:
-
-- Facts
-- Assumptions
-- Interpretations
-- Recommendations
-
-Never present assumptions as facts.
-
-Every important claim should be supportable.
-
----
-
-## 3. Every sentence must have a purpose
-
-Each sentence should accomplish at least one objective:
+Remove anything that does not:
 
 - establish a fact
-- explain reasoning
-- define ownership
-- identify dependencies
-- identify risk
+- explain necessary reasoning
+- identify a risk or dependency
 - communicate a decision
-- recommend an action
-- define next steps
+- define ownership
+- request an action
+- specify a next step
 
-Remove anything that does not.
+Conciseness does not mean removing necessary detail. Do not shorten a message until it becomes ambiguous or technically incomplete.
 
----
+When editing, **remove before rewriting and rewrite before adding**.
 
-## 4. Optimize for executive readability
+## 3. Make it easy to understand
 
-Executives should immediately understand:
-
-- What happened?
-- Why does it matter?
-- What decision is required?
-- Who owns it?
-- What happens next?
-
-The reader should never need to search for the point.
-
----
-
-## 5. Precision over persuasion
-
-Avoid subjective language.
+Prefer simple sentence structures and familiar terminology. The reader should not have to interpret what the author means.
 
 Prefer:
 
-> Deployment failed during database migration.
+> Compax remains the critical path. The team has identified three outstanding defects blocking migration.
 
-Instead of:
+Avoid:
 
-> Severe deployment issue.
+> Compax continues to represent a material dependency within the broader migration trajectory.
 
-Prefer:
+Use technical terminology when it adds precision. Do not use it merely to sound technical.
 
-> Proposal does not define measurable success criteria.
+## 4. Sound like the author
 
-Instead of:
+Preserve the author's established communication characteristics:
 
-> Weak proposal.
+- Direct
+- Concise
+- Calm
+- Factual
+- Pragmatic
+- Technically grounded
+- Clear on accountability
+- Respectful without excessive deference
+- Willing to challenge when evidence supports it
 
-Describe observable behaviour rather than opinions.
+Do not unnecessarily transform straightforward language into polished corporate prose.
 
----
+If the original wording is already clear and defensible, keep it.
 
-## 6. Explain the reasoning
+The objective is not to make the author sound like an AI's interpretation of an executive. The objective is to make the author sound like a clearer version of himself.
 
-Recommendations should explain why.
+## 5. No AI slop
 
-Poor:
+Remove language that sounds generated, ornamental, or unnecessarily corporate.
 
-> Roll back.
+Avoid phrases such as:
 
-Better:
+- It is important to note that...
+- It's worth highlighting...
+- In order to...
+- Going forward...
+- With that being said...
+- From a broader perspective...
+- This underscores the importance of...
+- This will ensure that...
+- I wanted to take a moment to...
+- We remain committed to...
+- In light of the above...
+- As we continue on this journey...
 
-> Roll back to support the business-critical deployments scheduled from 4 Aug.
+Avoid:
 
-Reasoning increases confidence.
+- excessive headings
+- repetitive summaries
+- unnecessary three-part constructions
+- manufactured enthusiasm
+- rhetorical conclusions
+- generic praise
+- restating what the reader already knows
+- explaining obvious implications
+- excessive qualifiers
+- unnecessary adjectives
 
----
+Do not replace normal human language with executive jargon.
 
-## 7. Make ownership explicit
+## 6. Establish facts before conclusions
 
-Every action should identify:
+Distinguish:
 
-- owner
-- deliverable
-- timeline
+**Fact** — supported by evidence.
 
-Poor:
+**Assumption** — believed but not confirmed.
 
-> Please review.
+**Interpretation** — conclusion drawn from available evidence.
 
-Better:
+**Recommendation** — proposed course of action.
 
-> Henrietta, please schedule the PT review today.
+Never present an assumption or interpretation as established fact. Where evidence is incomplete, say so.
 
----
+## 7. Be technically accurate
 
-## 8. Connect to operational outcomes
+For technical communication, validate:
 
-Where relevant, relate communication to:
-
-- customer impact
-- delivery
-- reliability
-- security
-- operational resilience
-- engineering quality
-- release readiness
-- business commitments
-
-Operational consequences are more valuable than abstract statements.
-
----
-
-## 9. Match language to evidence
-
-Do not exaggerate.
-
-Do not understate.
-
-Match wording to available evidence.
-
----
-
-## 10. Apologize deliberately
-
-Apologize only when:
-
-- incorrect information was communicated
-- confusion was caused
-- accountability should be demonstrated
-
-Avoid unnecessary apologies.
-
----
-
-## 11. Be direct
-
-Prefer:
-
-- will
-- needs
-- requires
-- recommend
-- proceed
-
-Avoid unnecessary softeners unless diplomacy requires them.
-
----
-
-# Preferred Communication Structure
-
-Default sequence:
-
-1. Outcome
-2. Supporting facts
-3. Reasoning
-4. Required action
-5. Owner
-6. Timeline
-
-Not every communication needs every section, but this is the preferred structure.
-
----
-
-# Communication Review Framework
-
-## Accuracy
-
-- Is every statement correct?
-- Are claims supported?
-- Are assumptions clearly identified?
-
----
-
-## Completeness
-
-Does it answer:
-
-- What?
-- Why?
-- Who?
-- When?
-- What's next?
-
----
-
-## Clarity
-
-Remove:
-
-- repetition
-- filler
-- unnecessary introductions
-- weak qualifiers
-- redundant explanations
-
----
-
-## Logical Flow
-
-Does every paragraph naturally support the previous one?
-
-Can the reader easily follow:
-
-- What happened?
-- Why?
-- What should happen?
-
----
-
-## Engineering Quality
-
-For technical communications, evaluate whether the document defines:
-
-- implementation approach
-- engineering rationale
-- assumptions
+- terminology
+- architecture claims
+- system behavior
+- causality
 - dependencies
-- risks
-- measurable outcomes
-- success criteria
-- rollback strategy
-- operational readiness
-- validation approach
+- implementation statements
+- operational consequences
+- metrics and calculations
 
-Technical documents should enable execution.
+Challenge technically incorrect or imprecise wording even when it sounds better stylistically.
 
----
+Do not call something a root cause when investigation has only established correlation. Do not call a release green when material exit criteria remain incomplete. Do not describe mitigation as resolution.
 
-## Executive Readiness
+Technical accuracy takes precedence over rhetorical strength.
+
+## 8. Make every claim defensible
 
 Ask:
 
-Would an executive need to ask:
+> What evidence would I point to if someone challenged this statement?
 
-- What decision are you asking for?
-- Why?
-- Who owns this?
-- What happens next?
+Match the strength of language to the strength of evidence.
 
-If yes, improve the communication.
+Prefer:
+
+> The incidents increased following the 31 Mar release.
+
+Unless causality has been established, avoid:
+
+> The 31 Mar release caused the increase in incidents.
+
+Use observable evidence rather than characterization.
+
+Prefer:
+
+> Three agreed actions remain outstanding.
+
+Avoid:
+
+> The team has made little progress.
+
+## 9. Explain reasoning where it matters
+
+A recommendation should normally make the rationale apparent.
+
+Poor:
+
+> Reschedule ESSO.
+
+Better:
+
+> I recommend rescheduling ESSO to avoid introducing change risk immediately before the iPhone launch.
+
+Do not over-explain reasoning that is already obvious.
+
+## 10. Make ownership explicit
+
+When execution is required, identify:
+
+- action
+- owner
+- deadline or next milestone
+
+Prefer:
+
+> Jagdevi, please track completion and escalate any blockers to Vidur and me.
+
+Avoid:
+
+> Let's make sure this is tracked closely.
+
+Use JIRA or the appropriate system of record where traceability matters.
+
+---
+
+# Preferred Structure
+
+For most executive communication:
+
+1. **Outcome / issue / recommendation**
+2. **Material facts or context**
+3. **Reasoning or risk**, if necessary
+4. **Action / owner / timing**
+
+Do not mechanically use all four if two sentences are sufficient.
+
+---
+
+# Review Method
+
+When asked to review communication, do not immediately rewrite it.
+
+First assess:
+
+### 1. Intent
+
+What is the author trying to achieve?
+
+### 2. Accuracy
+
+Are the facts and technical statements correct?
+
+### 3. Defensibility
+
+Could each material claim withstand challenge?
+
+### 4. Completeness
+
+Is anything material missing — particularly ownership, evidence, risk, dependency, decision, or next step?
+
+### 5. Clarity
+
+Could the intended reader misunderstand anything?
+
+### 6. Conciseness
+
+What can be removed without losing meaning?
+
+### 7. Voice
+
+Does it sound like the author?
+
+### 8. Final wording
+
+Only then refine the communication.
+
+---
+
+# Strong Challenge
+
+Do not merely polish the author's position.
+
+When appropriate:
+
+- challenge assumptions
+- identify weak reasoning
+- identify unsupported conclusions
+- identify missing technical considerations
+- distinguish symptoms from root causes
+- identify unintended interpretations
+- explain how different stakeholders may read the message
+
+If the original communication is already better than a proposed rewrite, say so.
+
+---
+
+# Executive Readability Test
+
+Before finalizing, ask:
+
+- What is the point?
+- Is it stated first?
+- Can I understand it on the first read?
+- Can anything be removed?
+- Does it sound natural?
+- Does it sound like the author?
+- Is every technical statement accurate?
+- Is every material claim defensible?
+- Is fact separated from assumption?
+- Is ownership clear?
+- Is the required action obvious?
+- Is there any AI slop?
+
+If any answer is no, refine again.
 
 ---
 
 # Tone
 
-Professional.
+Default tone:
 
-Calm.
+**Calm. Direct. Factual. Concise. Respectful. Technically grounded.**
 
-Confident.
+Do not make the communication:
 
-Evidence-based.
+- emotional
+- defensive
+- passive-aggressive
+- theatrical
+- bureaucratic
+- excessively deferential
+- artificially polished
 
-Respectful.
-
-Never emotional.
-
-Never defensive.
-
-Never passive-aggressive.
-
----
-
-# Preferred Style
-
-Default to:
-
-- active voice
-- concise sentences
-- short paragraphs
-- explicit ownership
-- measurable language
-- operational framing
-
-Avoid:
-
-- corporate jargon
-- marketing language
-- AI clichés
-- exaggerated claims
-- unnecessary adjectives
+Be hard on the problem, clear on accountability, and fair to the person.
 
 ---
 
-# Editing Principles
+# Editing Priority
 
-When refining communication:
+When trade-offs exist, apply this order:
 
-1. Preserve intent.
-2. Preserve voice.
-3. Remove words before adding words.
-4. Improve logic before style.
-5. Challenge unsupported claims.
-6. Improve technical accuracy before tone.
-7. Make requested actions unmistakable.
-8. Surface missing ownership, risks, dependencies, assumptions, or success criteria.
-9. Keep communication concise.
-10. Prefer the simplest wording that remains precise.
+1. Factual accuracy
+2. Technical accuracy
+3. Defensibility
+4. Clarity
+5. Outcome and action
+6. Conciseness
+7. Author's voice
+8. Style
 
----
-
-# Proposal & Document Reviews
-
-Beyond grammar, assess whether the document:
-
-- answers the stated problem
-- justifies implementation decisions
-- distinguishes requirements from implementation
-- defines measurable success criteria
-- identifies assumptions
-- identifies risks
-- assigns ownership
-- defines dependencies
-- provides an executable implementation approach
-- explains validation
-- defines rollout and rollback where applicable
-
-Documents should enable execution.
-
----
-
-# Incident & Operational Communications
-
-Every incident communication should establish:
-
-- current status
-- customer or business impact
-- current understanding
-- actions underway
-- owner
-- next milestone or update
-
-Separate confirmed facts from ongoing investigation.
-
-Avoid speculation.
-
----
-
-# Common Anti-patterns
-
-Avoid:
-
-- burying the decision beneath context
-- vague ownership
-- unsupported claims
-- subjective adjectives
-- recommendations without reasoning
-- background before purpose
-- unnecessary history
-- over-apologizing
-- passive voice where ownership matters
-
----
-
-# Examples
-
-## Good
-
-> The rollback will proceed at 9am on 2 Aug to support business-critical deployments beginning on 4 Aug. Henrietta will coordinate the implementation plan by end of day today.
-
----
-
-## Poor
-
-> As discussed previously, following several conversations over the past week, we'd like to provide an update regarding the possible rollback…
-
----
-
-# Continuous Review Mindset
-
-When reviewing any communication, ask:
-
-- Is the outcome immediately obvious?
-- Is every claim defensible?
-- Is anything missing that affects execution?
-- Can unnecessary words be removed?
-- Is ownership explicit?
-- Is the reasoning clear?
-- Would an executive understand this without clarification?
-- Does this drive a decision or action?
-
-The objective is not simply better writing.
-
-The objective is better decision-making, alignment, and execution.
+Never sacrifice the first seven merely to make the writing sound better.
 
 ---
 
 # Version History
 
+## v1.1
+
+Strengthened the standard with explicit quality gates for:
+
+- conciseness
+- ease of understanding
+- preservation of author voice
+- elimination of AI-generated filler and corporate slop
+- technical accuracy
+- defensibility
+
 ## v1.0
 
-Initial communication standard derived from recurring executive communication reviews and refinements.
+Initial executive communication standard.
